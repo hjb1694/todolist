@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+*,*::before,*::after{
+    margin:0;
+    padding:0;
+    box-sizing:inherit;
+}
+html{
+    font-size:62.5%;
+}
+body{
+    background:#efefef;
+    box-sizing:border-box;
+    font-family: 'Lato', sans-serif;
+}
+.header{
+    height:30rem;
+    background:linear-gradient(to bottom left,rgba(64, 232, 154,.5), rgba(64, 232, 154,.7)), url('./background.jpeg') no-repeat center / cover;
+    position:relative;
+}
+.header__centered{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+.header__hero{
+    font-size:5rem;
+    color:#fff;
+}
+.header__input-area{
+    margin-top:2rem;
+}
+.header__subbut{
+    font-size:1.8rem;
+    padding:.5rem;
+    background:transparent;
+    border:none;
+    color:white;
+    cursor:pointer;
+}
+.header__text-box{
+    font-size:1.8rem;
+    padding:.5rem 1rem;
+    color:#333;
+    font-family:inherit;
+    outline:none;
+    border:none;
+    border-radius:100px;
+}
+.header__text-box::placeholder{
+    font-style:italic;
+}
+.list-container{
+    font-size:2rem;
+    max-width:50rem;
+    margin:1rem auto;
+    color:#333;
+    padding:1rem;
+}
+.list-item{
+    display:flex;
+    border-bottom:1px solid #999;
+    padding:.5rem;
+    justify-content:space-between;
+    animation:fadeIn .8s;
+}
+.list-item__delete{
+    color:#f77;
+}
+.list-item__icon{
+    display:none;
+    cursor:pointer;
+}
+.list-item:hover .list-item__icon{
+    display:inline;
+}
+
+@keyframes fadeIn {
+    from{opacity:0;background:yellow;}
+    to{opacity:1;background:transparent;}
+}
